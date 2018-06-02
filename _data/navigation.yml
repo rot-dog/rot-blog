@@ -1,0 +1,10 @@
+docs:
+
+- title: index
+  url: index.html
+
+- title: blog
+  url: /blog.html
+
+- title: kontakti
+  url: kontakti.html
