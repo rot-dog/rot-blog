@@ -1,14 +1,13 @@
 @import "";
-/*@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');*/
-
-@font-face{
-    font-family: "anonymous";
-    src: url("fonts/anonymouspro.ttf") format("truetype");
-}
 
 @font-face{
     font-family: "nixieone";
-    src: url("fonts/nixieone.ttf") format("truetype");
+    src: url("../fonts/nixieone.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "anonymous";
+    src: url("../fonts/anonymouspro.ttf") format("truetype");
 }
 
 *{
@@ -18,7 +17,7 @@
 }
 
 body{
-    margin: 1% 20%;
+    margin: 1% 30%;
     min-width: 350px;
     font-size: 100%;
 }
@@ -31,12 +30,14 @@ h1,h2,h3,h4{
 
 h1{
     font-size: 47px;
-    margin-left: 15%;
+    margin: 0 15%;
+    text-align: left;
 }
 
 p{
-    font-family: anonzmous,courier,monospace;
-    text-indent: 24px;
+    font-family: anonymous,courier,monospace;
+    text-indent: 8pt;
+    text-align: justify;
 }
 
 a{
@@ -51,13 +52,14 @@ a:hover{
 /*--------header--------*/
 
 header{
-    height: 150px;
+    height: 100px;
+    margin-bottom: 30px;
 }
 
-header h1.title{
+h1.title{
     font-family: nixieone;
     font-size: 47px;
-    margin-top: 90px;
+    margin-top: 80px;
     margin-bottom: 15px;
 }
 
@@ -83,11 +85,14 @@ li.posts{
 
 /*-------navmenu--------*/
 
+nav{
+    text-align: center;
+    }
+
 ul#navmenu{
     position: relative;
     background-color: #ffffff;
-    text-align: left;
-    margin-left: 15%;
+    width: 100%;
 }
 
 ul#navmenu li{
@@ -99,7 +104,7 @@ ul#navmenu a{
     width: auto;
     text-decoration: none;
     padding: 5px 5px 0 5px;
-    color: #dedede;
+    color: #cccccc;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 24px;
@@ -110,4 +115,52 @@ ul#navmenu li:hover > a{
     color: #272727;
 }
 
-/*------------------------*/
+/*----------post-----------*/
+
+div.back{
+    margin: 32px 0 24px 0;
+}
+
+div.content{
+    margin: 0 15px;
+}
+
+div.post-info{
+    text-align: center;
+    margin: 24px 0;
+}
+
+/*---------images--------*/
+
+img.dog{
+    text-align: center;
+    margin: 0 15%;
+    width: 290px;
+}
+
+.paragraph-inline-left{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    min-width: 150px;
+}
+
+.paragraph-inline-left p{
+    text-indent: 0px;
+    text-align: center;
+}
+    
+.paragraph-inline-right{
+    display: inline-block;
+    float: right; 
+    text-align: center;
+    min-width: 150px;
+}
+
+.paragraph-inline-right p{
+    text-indent: 0px;
+    text-align: center;
+}
+    
+    
+    
