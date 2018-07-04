@@ -1,14 +1,14 @@
 docs:
 
 - title: index
-  url: /index
+  url: /index.html
 
 - title: blog
-  url: /blog
+  url: /blog.html
 
 - title: about
-  url: /about
+  url: /about.html
   
 - title: kontakti
-  url: /kontakti
+  url: /kontakti.html
   
