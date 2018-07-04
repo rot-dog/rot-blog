@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<main>
+    <section>
+    <div class="back">
+        <a href="/blog" alt="< nazad">&lt nazad</a>
+    </div>
+    
+    <div class="post-info">
+        {% if page.date %} {{page.date | date: "%d-%m-%Y" }} {% endif %}
+        {% if page.title %} / {{ page.title }} {% endif %}
+        {% if page.author %} / {{page.author}} {% endif %}
+        {% if page.categories %} / {{page.categories}} {% endif %}
+    </div>
+    
+    <div class="content">
+        {{content}}
+    </div>
+    </section>        
+</main>
